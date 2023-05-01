@@ -1,0 +1,48 @@
+main {
+    background-color: #ffeacc;
+    margin-left: 250px;
+    padding: 7% 15%;
+}
+
+h1, h2, h3 {
+    color: #a00;
+    font-family: 'Libre-Baskerville';
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    border-bottom: #d8bb00 solid 4px;
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p, li {
+    color: #000;
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #a00;
+    transition: 200ms;
+}
+
+a:hover {
+    color: #f00;
+}
+
+.trait-list {
+    list-style: none;
+    padding-left: 0;
+    text-indent: 32px;
+}
