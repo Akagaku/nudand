@@ -1,0 +1,55 @@
+<%- include("../header") %>
+<%- include("../navbar") %>
+
+<% const raceMain = race; %>
+
+<main>
+  <h1><%=race.name%></h1>
+  <p>
+    Mystical and alien, elves are said to be descended from a group of human, kidnapped by unseelie fey and engineered as living weapons. They
+    were stripped of their less useful instincts—emotion, empathy, and humanity—in exchange for wisdom and long life. Once the ruling class of a
+    powerful kingdom, they have since been dethroned, even reduced to second rate citizens in parts of the world.
+  </p>
+
+  <h2>The Bones of an Empire</h2>
+  <p>
+    The end of the Age of Dragons saw the rise of the Age of the Elves. For thousands of years, they ruled over most of the northern isle, and
+    their influence reached even the deserts of the southern isle. Today, the isles are blanketed with Sothonian ruins. Several families of moon
+    elves still cling desperately to the remnants of their fallen houses, tracking lineages and collecting heirlooms.
+  </p>
+
+  <h2><%= race.name %> Traits</h2>
+  <p>
+    Due to the tinkering of the fey and millennia of history, elves have a number of natural abilities.
+  </p>
+  <%- include("race.ejs") %>
+
+  <h3><%= race = raceMain.sub[0].name %></h3>
+  <p>
+    Also called moon elves, Sothonians are children of Sothon, the first elven city. They are tall and thin, and often have stark white hair,
+    skin, and eyes. Over the centuries, however, the blood of the feytouched has thinned, and gray-eyed elves with more humanlike hair and skin
+    are not uncommon.
+  </p>
+  <p>
+    Sothonians are equally scholarly and warlike. Gladiators fought for the masses and feats of strength are held for holidays, yet many advances
+    in philosphy were made by Sothonian scholars, and Sothon was home to the most imporant scientific institutions of its age.
+  </p>
+  <% race = raceMain.sub[0] %>
+  <%- include("race.ejs") %>
+
+  <h3><%= raceMain.sub[1].name %></h3>
+  <p>
+    At its height, Sothon extended its reach across the Wound to the deserts of al-Qara. In an ironic twist of fate, Sothon's fall left its
+    Alkarian colony the only elven realm. Millennia of mingling with native humans created the sun elves, shorter and darker of hair and skin, and
+    green or brown of eye.
+  </p>
+  <p>
+    The sun elves aren't aggerssive as their northern cousins, but are no less shrewd. They are merchants and traders, scholars and
+    mathematicians, wise men and sorcerers. Harazal, the nocturnal City of Gold, is the capital of Alkaria, and has made its name as one of the
+    leading economic powers in the world.
+  </p>
+  <% race = raceMain.sub[1] %>
+  <%- include("race.ejs") %>
+</main>
+
+<%- include("../footer") %>

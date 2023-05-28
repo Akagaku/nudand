@@ -1,33 +1,37 @@
 <%- include("header") %>
-
 <%- include("navbar") %>
 
 <main>
   <h1>Character Creation</h1>
   <p>
-    Welcome to boot camp. In this section, you will find a step-by-step guide to character creation in the fifth edition of Dungeons and
-    Dragons. Everything you'll need to know, from point-buy to proficiecny bonus. We'll also be creating an example character named Shlorbak the
-    Swift, so you can get a feel for the workflow. It helps, I swear.
+    Welcome to boot camp. In this section, you'll find a step-by-step guide to character creation in fifth edition Dungeons and Dragons.
+    Everything you need to know, from point-buy to proficiecny bonus. We'll also be making an example character so you can get a feel for the
+    workflow.
   </p>
 
   <h1 id="race">Race</h1>
   <p>
     Like in real life, everything in D&D always come back to race. Unlike in real life, you get to pick your race, and no one is definitively
-    better than another. Except half-elves. They're crazy good in basically every edition of the game.
+    better than another. Except half-elves. They're crazy good in basically every edition of the game, for some reason.
   </p>
   <p>
-    The races listed on this website encompass only those which are present in my game. To account for every officially released race in 5e would
-    be a herculean task, considering the number has more than quintupled since 2014 (and in all that time, only one extra class).
+    But the races available to you in Dungeons and Dragons are <em>way</em> more interesting than the boring ones you get in real life. You don't
+    just roll the dice and get stuck as a Bolivian for 60 years. You get to be like an elf or an orc or a dragon person or something.
+  </p>
+  <p>
+    You can find a list of playable races in the <em>Resources</em> menu. The ones listed on this site encompass only those which are present in
+    my game. To account for every official race would be a herculean task, since the number has more than quintupled since 2014. (And in that
+    time, only one new class!)
   </p>
 
     <h2 id="racial-traits">Racial Traits</h2>
     <p>
       There wouldn't be much point in having a bunch of different races if they were all the same. The things that make them different are what
-      make them unique and interesting. That's where racial traits come in: a number of different stat bonuses and mechanical differences that
-      distinguish the races from one another.
+      make them unique and interesting.
     </p>
     <p>
-      Though each race has its own lineup of special traits, every one shares these five:
+      That's where racial traits come in: a number of different stat bonuses and mechanical differences that distinguish the races from one
+      another. Though each race has its own lineup of special traits, every one shares these five:
     </p>
     <ul class="trait-list">
       <li>
@@ -54,18 +58,266 @@
 
   <h1 id="ability-scores">Ability Scores</h1>
   <p>
-
+    Okay, now pay attention, because this part is important. This is the part of the character sheet you'll be consulting every time you roll the
+    dice for the entire game. Your <em>ability scores</em> are measures of your character's innate physical/mental capabilities, ranked on a scale
+    from 1 to 20. There are six in total:
   </p>
+  <ul>
+    <li>
+      <strong><em>Strength.</em></strong> Raw physical power and athleticism. Used for hitting hard, climbing walls, and lifting heavy things.
+      This stat is used in the calculation of most melee damage rolls.
+    </li>
+    <li>
+      <strong><em>Dexterity.</em></strong> Speed, reflexes, and agility. (Yes, I know Dexterity is fine motor function of the hands and fingers,
+      but this game disagrees.) Used to keep your balance, dodge attacks, and aim ranged weapons.
+    </li>
+    <li>
+      <strong><em>Constitution.</em></strong> Resistance and fortitude. Used to not get sick, not get poisoned, and not breathe for a long time
+      without dying. This stat has an effect on your total hit points. 
+    </li>
+    <li>
+      <strong><em>Intelligence.</em></strong> Ironically, not intelligence. Instead of smart, this stat makes you well-studied. Used for
+      remembering things and knowing things in general. Spellcasting ability for artificers and wizards.
+    </li>
+    <li>
+      <strong><em>Wisdom.</em></strong> Intuition, perceptiveness, and quick thinking. Used to survive in nature, spot hidden things, and detect
+      lies. Spellcasting abiltiy for clerics, druids, and rangers.
+    </li>
+    <li>
+      <strong><em>Charisma.</em></strong> Likability, force of personality, and persuasiveness. Used to convince people, lie to people, and not
+      get possessed by demons. Spellcasting ability for bards, paladins, sorcerers, and warlocks.
+    </li>
+  </ul>
 
     <h2 id="modifiers">Modifiers</h2>
+    <table class="table table-striped" style="float: left; margin-right: 16px; width: 150px;">
+      <thead>
+        <tr>
+          <th>Score</th>
+          <th>Modifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8-9</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>10-11</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>12-13</td>
+          <td>+1</td>
+        </tr>
+        <tr>
+          <td>14-15</td>
+          <td>+2</td>
+        </tr>
+        <tr>
+          <td>16-17</td>
+          <td>+3</td>
+        </tr>
+        <tr>
+          <td>18-19</td>
+          <td>+4</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>+5</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Okay, I may have fibbed a little right out the gate.
+    </p>
+    <p>
+      You won't be consulting your ability scores every time you roll the dice. In fact, unless you want to know how long you can jump with a
+      running start or know how much weight you can carry, you'll almost never consult them at all.
+    </p>
+    <p>
+      So why are they even there?
+    </p>
+    <p>
+      The truth is ability scores are just a relic of older editions. They're only still in the game because oldheads and traditionalists (me)
+      would cry and scream if they were taken out. The <em>real</em> important numbers are your ability score <strong>modifiers</strong>.
+    </p>
+    <p>
+      The modifier for any ability score is equal to the score, divided by two (rounded down), minus five. Or, you can just use this
+      nifty table I made up just for you.
+    </p>
+
     <h2 id="ability-score-generation">Ability Score Generation</h2>
+    <p>
+      "But how does one know one's ability scores?" you may be asking. Well, there are actually a few different ways to figure out your stat
+      lineup. All of them are viable options (well, most of them are), and each DM tends to favor one over the others.
+    </p>
+    <p><em>
+      Remember: Add on your racial ability score changes <strong>after</strong> you've determined your scores with one of the below methods—not
+      before!
+    </em></p>
+
       <h3 id="4d6">The Classic</h3>
+      <p>
+        This method is also known as the 4d6 method, or the "4d6 drop one" method, for reasons which will become apparent in a second. Get your
+        favored six-sided dice, and roll four of them. Take away the lowest roll, and add the remaining three. The sum is your score. Do this once
+        for each ability score.
+      </p>
+      <p>
+        This follows the sentiment of "get a number between 3 and 18" from back in first edition, but favors numbers at the upper end of that
+        range to distinguish your character from the average person.
+      </p>
+
       <h3 id="standard-array">The Standard</h3>
+      <p>
+        Do random numbers scare you? Do you prefer to keep away from gambling? Pussy. This is probably the method for you. Instead of rolling
+        dice, you get an array of 15/14/13/12/10/8. Use each number exactly once, for whichever ability score you want.
+      </p>
+      <p>
+        This one actually isn't that bad. You get some good scores, some average scores, and one pretty bad score. Instant character archetype!
+      </p>
+
       <h3 id="point-buy">The Calculator</h3>
+      <table class="table table-striped" style="float: right; margin-left: 16px; width: 150px;">
+        <thead>
+          <tr>
+            <th>Score</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>9</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The standard array is cool, but it sacrifices a lot of variety and customizability for the sake of simplicity. Excellent for new players
+        or getting a quick start, but not so much for making unique and varied characters.
+      </p>
+      <p>
+        If that sounds like what you're thinking, or you're an accountant by trade, this may just be the method for you: point buy. Instead of
+        being handed your ability scores or rolling for them, you crunch some numbers to find out what they are.
+      </p>
+      <p>
+        Each score has a point cost. A score of 8 is free, and you have to spend points to move up from there. So, two scores of 13 would cost 10
+        points, one score of 15 and one score of 12 would cost 11 points.
+      </p>
+      <p>
+        The goal of this fun little numbers game is to get an ability score array you're happy with, without spending more than 27 points. Funny
+        enough, the standard array costs <em>exactly</em> 27 points.
+      </p>
+
       <h3 id="3d6">The Fuck You</h3>
+      <p>
+        Taking off the kid gloves for this one. This method isn't too dissimilar from the classic, but with one key difference: the number of
+        dice. No more 4d6 drop one. Fuck that. 3d6 drop nothing. Pure, unfiltered random chance from 3-18. This is how shit got done in first and
+        second edition.
+      </p>
+      <p>
+        What's that? You rolled four 3's? No you didn't actually—your DM rolled it for you. But at least you get to choose two good abilities,
+        right? No you don't, actually. They're rolled in order. Fuck you.
+      </p>
+
       <h3 id="colville">The Colville</h3>
+      <p>
+        To be completely transparent, this isn't officially sanctioned. It was created by Matthew Colville, a popular D&D YouTuber, and
+        professional writer and game designer.
+      </p>
+      <p>
+        Start with 4d6 drop one, <em>but</em> roll in order, starting with Strength. Once you've rolled and added your racial bonuses, give it the
+        once-over. If you don't have at least two scores of 15 or higher, start over.
+      </p>
+      <p>
+        The idea is to break new players' pre-conceived notions of their characters, which are often based on other characters or some weird
+        edgelord fantasy. Or something intentionally obtuse like a guy who lights things on fire for no reason other than to be annoying.
+      </p>
+      <p>
+        By making players <em>discover</em> their characters, you prevent the frustration of failing to create a character the game wasn't
+        designed to accomodate, and you create a fun and useful exercise for practicing roleplaying skills.
+      </p>
+
   <h1 id="class">Class</h1>
+  <p>
+    Now <em>this</em> is where things get good. Take a look at your character sheet. Just at random. Close your eyes, pick up the sheet, hold it
+    in front of you, and then open your eyes again. Odds are you're looking at a stat determined by your class. That's how impactful a choice it
+    is.
+  </p>
+
     <h2 id="hit-dice">Points, Wife, Dice</h2>
+    <table class="table table-striped" style="float: left; margin-right: 16px; width: 200px;">
+      <thead>
+        <tr>
+          <th>Classes</th>
+          <th>HD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sorcerer, Wizard</td>
+          <td>d6</td>
+        </tr>
+        <tr>
+          <td>Artificer, Bard, Cleric, Druid, Monk, Rogue, Warlock</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Fighter, Paladin, Ranger</td>
+          <td>d10</td>
+        </tr>
+        <tr>
+          <td>Barbarian</td>
+          <td>d12</td>
+        </tr>
+      </tbody>
+    </table>
+      <p>
+      Have you ever played a video game? In that video game, was your character's general <em>aliveness</em> represented by a value labeled
+      "health" or "vitality"? If so, say "Thank you, Gary Gygax."
+    </p>
+    <p>
+      Dungeons and Dragons was the first ever game to use hit points to track aliveness. Before D&D, the closest thing we had was the number of
+      men left alive in each unit in your favorite war game.
+    </p>
+    <p>
+      Since video games run on computers, they use exponents and complex equations to determine hit points. But TSR thought it was better if you
+      didn't need a calculator to play. So your retarded ass is in luck.
+    </p>
+    <p>
+      The answer they settled on was rolling dice. It is a dice game, after all. Is the random element of hit point generation a little annoying?
+      Sometimes, but it balances out the more you roll. Take a statistics class, dummy. And is it more simple than the equation Dark Souls uses
+      for Vitality? <a href="https://eldenring.wiki.fextralife.com/file/Elden-Ring/vigor_health.png">Absolutely</a>.
+    </p>
+
     <h2 id="class-proficiencies">Proficiencies</h2>
     <h2 id="class-equipment">Starting Equipment</h2>
     <h2 id="class-features">Class Features</h2>

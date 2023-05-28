@@ -1,0 +1,23 @@
+<% if (race.asi.length > 0) { %>
+    <p class="trait-list"><strong><em>Ability Score Increase.</em></strong> <%= race.getAsi() %></p>
+<% } %>
+
+<% if (race.age) { %>
+    <p class="trait-list"><strong><em>Age.</em></strong> <%= race.age %></p>
+<% } %>
+
+<% if (race.size) { %>
+    <p class="trait-list"><strong><em>Size.</em></strong> <%= race.size %></p>
+<% } %>
+
+<% if (race.speed) { %>
+    <p class="trait-list"><strong><em>Speed.</em></strong> Your base walking speed is <%= race.speed %> feet.</p>
+<% } %>
+
+<% for (let i = 0; i < race.traits.length; i++) { %>
+    <p class="trait-list"><strong><em><%= race.traits[i].name %>.</em></strong> <%= race.traits[i].desc %></p>
+<% } %>
+
+<% if (race.lang.length > 0) { %>
+    <p class="trait-list"><strong><em>Languages.</em></strong> <%= race.getLang() %></p>
+<% } %>

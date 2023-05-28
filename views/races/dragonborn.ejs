@@ -1,0 +1,192 @@
+<%- include("../header") %>
+<%- include("../navbar") %>
+
+<% const raceMain = race; %>
+
+<main>
+  <h1><%= race.name %></h1>
+  <p>
+    Before the days of men and elves and dwarves, the land was ruled by Bahamut the Brilliant. He reigned for untold millennia, until a battle
+    between he and his sister Tiamat resulted in their deaths, and the end of the dragons. Though, the death of the wyrms birthed a new people.
+    Though not as large and powerful, the dragonborn are now the closest thing most will see to a dragon.
+  </p>
+
+  <h2>Visage of the Drakes</h2>
+  <p>
+    Towering and imposing in frame, and brightly colored in magnificent scales, the dragonborn are not difficult to notice. Though they lack wings
+    and tails, they inherited the dragons' claws and fangs, as well as the power of the breath weapon.
+  </p>
+
+  <h2>Dark and Twisted Sorcery</h2>
+  <p>
+    Legends say a shaman from an early human tribe discovered an ancient ritual, lost to time. Using the blood of the newly dead dragons, he
+    transformed his followers into the first dragonborn. They gained great power and took on the aspect of the dragon, at the cost of their
+    lifespan. Some tellings suggest the shaman went on an expedition into the Wound, to uncover the blood of Bahamut and Tiamat.
+  </p>
+
+  <h2><%= race.name %> Traits</h2>
+  <p>The dormant power of the dragons' blood grants dragonborn a number of inherent draconic abilities.</p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[0] %>
+  <h3><%= race.name %></h3>
+  <p>
+    These dragonborn are descended from the chromatic dragons who rose up against their metallic fathers, leading to the war that sparked the
+    downfall of dragonkind. Lesser in power but greater in number, their immunity to dragon breath attacks made them adept kinslayers, and their
+    might and number drove even the proud dwarves to hide under the earth.
+  </p>
+  <p>
+    Though they are the most common type of dragonborn, they can't quite escape the shadow of their malevolent forebears. Their scales are
+    colorful but dull, lacking the vibrance of the true dragons.
+  </p>
+  <%- include("race") %>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dragon</th>
+        <th>Damage Type</th>
+        <th>Breath Weapon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Black</td>
+        <td>Acid</td>
+        <td>5 by 30 ft. line (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Blue</td>
+        <td>Lightning</td>
+        <td>5 by 30 ft. line (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Green</td>
+        <td>Poison</td>
+        <td>15 ft. cone (Con save)</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>Fire</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>White</td>
+        <td>Cold</td>
+        <td>15 ft. cone (Con save)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <% race = raceMain.sub[1] %>
+  <h3><%= race.name %></h3>
+  <p>
+    Heirs to the blood of the Platinum, these dragonborn are the closest known living things to descendants of Bahamut. As the metallic dragons of
+    old were not as plentiful as their chromatic children, dragonborn of this type are rare, though still far more common than gem dragons.
+  </p>
+  <p>
+    Their bodies are coated in scales of metal, but are rough and dull, a pale reflection of Bahamut's brilliance. Some see them as living symbols
+    of good, remnants of a bygone era when law and virtue ruled, though since no living creature can remember that age, these views are highly
+    romanticized.
+  </p>
+  <%- include("race") %>
+  <ul style="margin-left: 32px;">
+    <li>
+      <strong><em>Enervating Breath.</em></strong> Each creature in the cone must succeed on a Constitution saving throw or become incapacitated
+      until the start of your next turn.
+    </li>
+    <li>
+      <strong><em>Repulsion Breath.</em></strong> Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from
+      you and be knocked prone.
+    </li>
+  </ul>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dragon</th>
+        <th>Damage Type</th>
+        <th>Breath Weapon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brass</td>
+        <td>Fire</td>
+        <td>5 by 30 ft. line (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Bronze</td>
+        <td>Lightning</td>
+        <td>5 by 30 ft. line (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Copper</td>
+        <td>Acid</td>
+        <td>5 by 30 ft. line (Con save)</td>
+      </tr>
+      <tr>
+        <td>Gold</td>
+        <td>Fire</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Silver</td>
+        <td>Cold</td>
+        <td>15 ft. cone (Con save)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <% race = raceMain.sub[2] %>
+  <h3><%= race.name %></h3>
+  <p>
+    At the beginning of the War of the Kinslayers, several chromatic dragons chased the dwarves of Stengrotto into the Underdark, tunnelling into
+    the earth and ever after living in gem-filled caverns in the deep. Over the course of millennia, they adapted to the psionic energy emitted by
+    the gemstones, and were slowly transformed in a process similar to the Edelian dwarves of Despin.
+  </p>
+  <p>
+    Knowledge of gem dragons is scant even among scholars. As such, gem dragonborn are exceedingly rare. Unlike other dragons, they have no
+    scales. Instead, their skin is hard, smooth, and polished. Small, broken-off pieces of their horns and bodies are held diligently in their
+    places by their psionic power.
+  </p>
+  <%- include("race") %>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dragon</th>
+        <th>Damage Type</th>
+        <th>Breath Weapon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amethyst</td>
+        <td>Force</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Crystal</td>
+        <td>Radiant</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Emerald</td>
+        <td>Psychic</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Sapphire</td>
+        <td>Thunder</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+      <tr>
+        <td>Topaz</td>
+        <td>Necrotic</td>
+        <td>15 ft. cone (Dex save)</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+<%- include("../footer") %>

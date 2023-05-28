@@ -1,0 +1,51 @@
+<%- include("../header") %>
+<%- include("../navbar") %>
+
+<% const raceMain = race; %>
+
+<main>
+  <h1><%= race.name %></h1>
+  <p>
+  </p>
+
+  <h2></h2>
+  <p>
+  </p>
+  
+  <h2></h2>
+  <p>
+  </p>
+  
+  <h2><%= race.name %> Traits</h2>
+  <p></p>
+  <%- include("race") %>
+  <% race = raceMain.sub[0] %>
+  
+  <h3><%= race.name %></h3>
+  <p>
+    The Ezakhs are a barbaric race of orc from the far-flung north. Daunting in their size and animalistic appearance, they have been feared for
+    centuries by northerners. Their strength, durability, and ferocity make them formidable opponents, and their love of
+    treasure and violence make them insatiable killers.
+  </p>
+  <p>
+    Like their orcish sires, Ezakh half-orcs make for near-unparalleled melee fighters, They can effortlessly chase down fleeing opponents, and
+    can continue to fight on even in the face of death. They are hulking in height and muscle mass, and have cold, gray skin and protruding,
+    tusked jaws.
+  </p>
+  <%- include("race") %>
+  
+  <% race = raceMain.sub[1] %>
+  <h3><%= race.name %></h3>
+  <p>
+    The Yacal tribe is a large, slightly more civilized group of orcs in the southen jungles of Selvana. Even during the age of dragons, they were
+    ancient enemies of early humans. They are skilled and stealthy hunters, and they stalk the dense forests of the southern isle with an
+    unmatched ruthless efficiency.
+  </p>
+  <p>
+    Their half-human children share their skill and penchant for brutality, and are natural-born hunters. They are smaller and slighter than the
+    northern Ezakh, and other than their green skin, their faces are far more human in appearance, with smaller tusks.
+  </p>
+  <%- include("race") %>
+</main>
+
+<%- include("../footer") %>

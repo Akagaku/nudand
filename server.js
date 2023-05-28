@@ -1,6 +1,9 @@
-let express = require('express');
+//jshint esversion: 6
 
-let app = express();
+import express from 'express';
+const app = express();
+
+import { Trait, Race, dragonborn, dwarf, elf, genasi, halfOrc, halfling, human } from './race.js';
 
 app.use(express.static('public'));
 
@@ -16,20 +19,34 @@ app.get('/primer', function(req, res) {
     res.render('primer.ejs', {title: 'Primer'});
 });
 
-app.get('/sothos', function(req, res) {
-    res.render('person.ejs', {
-        title: 'Sothos',
-        race: 'Elf (formerly human)',
-        born: '11,975 AoD',
-        died: '2,078 AoE (aged 2,704)',
-        ruler: true,
-        position: 'King of Nekravys',
-        ruler: 'true',
-        reign: '1 AoE - 2,078 AoE',
-        family: ['Sothia (daughter)']
-    })
+app.get('/wiki/main', function(req, res) {
+    res.render('wiki/main.ejs', {title: 'Wiki'});
+});
+
+app.get('/races/dragonborn', function(req, res) {
+    res.render('races/dragonborn.ejs', {title: 'Dragonborn', race: dragonborn});
+});
+
+app.get('/races/dwarf', function(req, res) {
+    res.render('races/dwarf.ejs', {title: 'Dwarf', race: dwarf});
+});
+
+app.get('/races/elf', function(req, res) {
+    res.render('races/elf.ejs', {title: 'Elf', race: elf});
+});
+
+app.get('/races/half-orc', function(req, res) {
+    res.render('races/half-orc.ejs', {title: 'Half-Orc', race: halfOrc});
+});
+
+app.get('/races/halfling', function(req, res) {
+    res.render('races/halfling.ejs', {title: 'Halfling', race: halfling});
+});
+
+app.get('/races/human', function(req, res) {
+    res.render('races/human.ejs', {title: 'Human', race: human});
 });
 
 app.listen(1974, function() {
-    console.log('Critical success! Server is running on port 1974.')
+    console.log('Critical success! Server is running on port 1974.');
 });

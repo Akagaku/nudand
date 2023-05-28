@@ -1,0 +1,47 @@
+<%- include("../header") %>
+<%- include("../navbar") %>
+
+<% const raceMain = race; %>
+
+<main>
+  <h1><%= race.name %></h1>
+  <p>
+    Somewhere in the chronicle of history, there came to be a peculiar race not dissimilar to small humans. Though little is known about them by
+    other peoples, they have been around longer than living memory can tell. What is known is that they are a friendly and jovial group of
+    hardworking folk. They enjoy quiet life, loud parties, nature, and good food and ale.
+  </p>
+
+  <h2>Half-Sized Humans</h2>
+  <p>
+    It's impossible to see a halfling without considering the similarities to humans. Other than their dimunitive size, they are identical to
+    humans in most ways, save two. They have slightly childlike proportions, with large heads and small bodies compared to the average human. Of
+    course, their most recognizable feature is their feet: hairy on the top, leathery on the bottom, and as big as a giant's.
+  </p>
+
+  <h2>One With Nature</h2>
+  <p>
+    From hills and plains, to rivers and lakes, to woods and forests. Halflings, more than any other race in the Isles, are perfectly content to
+    exist in nature without trying to bend it to their will. They live off the land, reside in simple dwellings, and spend twice as much time
+    sowing as reaping. They don't even have roads, and still tread the land comfortably due to their large, thick-skinned feet.
+  </p>
+
+  <h2><%= race.name %> Traits</h2>
+  <p>All halflings share a number of distinct traits.</p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[0] %>
+  <h3><%= race.name %></h3>
+  <p></p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[1] %>
+  <h3><%= race.name %></h3>
+  <p></p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[2] %>
+  <h3><%= race.name %></h3>
+  <p></p>
+  <%- include("race") %>
+</main>
+<%- include("../footer") %>

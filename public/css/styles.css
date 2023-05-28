@@ -4,23 +4,29 @@ main {
     padding: 7% 15%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #a00;
     font-family: 'Libre-Baskerville';
     font-variant: small-caps;
 }
 
 h1 {
+    clear: both;
     font-size: 48px;
 }
 
 h2 {
     border-bottom: #d8bb00 solid 4px;
-    font-size: 36px;
+    clear: both;
+    font-size: 36px;    
 }
 
 h3 {
     font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
 }
 
 p, li {
@@ -41,8 +47,67 @@ a:hover {
     color: #f00;
 }
 
+tr, th, td {
+    border: none;
+}
+
+th {
+    color: #a00;
+}
+
 .trait-list {
     list-style: none;
     padding-left: 0;
     text-indent: 32px;
+}
+
+.wiki-box {
+    background-color: #fff1d4;
+    border: #422400 solid 1px;
+    border-radius: 4px;
+    display: inline;
+    float: right;
+    margin-left: 16px;
+    max-width: 350px;
+    padding: 32px;
+}
+
+.wiki-box h1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-variant: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wiki-box h2 {
+    border-width: 3px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-variant: normal;
+    font-weight: 700;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.wiki-box p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.wiki-box p.event-subtitle {
+    font-size: 14px;
+    text-align: center;
+}
+
+.wiki-box ul, .wiki-box li {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-2 {
+    margin-left: 6px;
 }

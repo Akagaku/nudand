@@ -1,0 +1,78 @@
+<%- include("../header") %>
+<%- include("../navbar") %>
+
+<% const raceMain = race %>
+
+<main>
+  <h1><%= race.name %></h1>
+  <p>
+    None living know quite how the First Folk came to be, nor where or when. The secret of their origin is lost even to the dwarves themselves.
+    All that is known is they've been carving stone and digging tunnels since the days of dragons. Long is their history and wide their domain,
+    but few their number and divided their people. Their strongholds are magnificent, and their craftsmanship—as their wisdom—is legendary.
+  </p>
+
+  <h2>Built for Tunnelling</h2>
+  <p>
+    Short and stout, no race is better suited for a long life underground than the dwarves. Though all share a small size, strong frame, and thick
+    beard, each dwarven culture is visually distinct. From the earthy colors of the stone dwarves, to the bright red hair of the iron dwaves, to
+    the pale skin and colorful hair of the gem dwarves, they are almost as diverse as humans.
+  </p>
+
+  <h2>A Fortress Most Ancient</h2>
+  <p>
+    It is said that a vast web of dwarven city states once spanned the north. Today, they are but ruins which few are brave enough to delve. Of
+    their mighty number, only five strongholds now exist, the oldest of which being the first ever founded. The ancient stone mining settlement
+    Korblok is home to the Chronicle of the Ages, a great mural carved into the stone walls of the stronghold telling the story of every event of
+    any historical importance to the dwarven people.
+  </p>
+
+  <h2><%= race.name %> Traits</h2>
+  <p>Dwarves have a number of inborn talents, the result of tens of thousands of years of dwarf history.</p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[0] %>
+  <h3><%= race.name %></h3>
+  <p>
+    The stone dwarves, or Fjellans, are the most common species of dwarf in the Isles. They come from Korblok, the oldest and largest of all
+    strongholds, and are wisened as one would expect of such a people. Their hair and eyes often come in shades of gray and faded earthtones. They
+    hold a strong sense of dwarven pride, and appreciate fine craftsmanship more than any other dwarves.
+  </p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[1] %>
+  <h3><%= race.name %></h3>
+  <p>
+    The iron dwarves—known also as the Bjor—come from Staldor, the largest iron mine in the north. If you see a red-haired dwarf, it's safe to
+    assume it's a Bjor. Their close relationship with metallurgy makes them well-adjusted to heat, and most have picked up some combat training
+    with the weapons they craft. The most hot headed dwarves by far, they are won't take any insult or offense lying down.
+  </p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[2] %>
+  <h3><%= race.name %></h3>
+  <p>
+    Silver dwarves, or Myntians, are the dwarves of Slottrik. As the holders of such a valuable resource, they are as much charming merchants as
+    they are hardy miners. Myntians are easily identified by their gray or white hair, laden with sparkling silver dust particles. The most social
+    of the dwarves, they are boastful and inviting, and are convincing salesmen.
+  </p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[3] %>
+  <h3><%= race.name %></h3>
+  <p>
+    Coal dwarves—also known as Rull—come from Vargift, a coal mine and the youngest dwarven stronghold. Their hair is typically black, whether
+    natural or stained with coal dust. Every Rull carries an iron mask to filter the toxic air from the depths of their mines, each with a unique
+    design. Unlike stone or iron dwarves, they are stoic and reserved, accustomed to saving their breath.
+  </p>
+  <%- include("race") %>
+
+  <% race = raceMain.sub[4] %>
+  <h3><%= race.name %></h3>
+  <p>
+    Gem dwarves, or Edelians, are the least common race of dwarf in the isles. They are from Despin, a hidden cave network rich with precious
+    stones. Though each pale Edelian's colorful hair mimics the shade of a particular gem, the first thing you're likely to notice is the far-away
+    look in his eye. They often forget to speak, as they are accustomed to communicating telepathically.
+  </p>
+  <%- include("race") %>
+</main>
+<%- include("../footer") %>
